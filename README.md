@@ -17,5 +17,10 @@ from pyscbwrapper import SCB
 ```
 
 ## Fetch data
+The DeSO areas themselves, i.e., the polygon dataset, was downloaded directly as a geopackage (gpkg) from [SCB](https://www.scb.se/en/services/open-data-api/open-geodata/deso--demographic-statistical-areas/). With geopandas the GPKG was processed, see [notebook], and then imported to PostGIS using the shp2pgsql tool.
+
+Examples of fetching the DeSO census data from the SCB API can be found in the [api-fetch-notebooks folder](/api-fetch-notebooks).
+
 
 ## Transform data
+Examples of transforming the DeSO census csv-files fetched from the SCB API can be found in the [csv-to-postgresql folder](/csv-to-postgresql).
